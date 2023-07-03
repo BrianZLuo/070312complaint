@@ -58,7 +58,7 @@ const Admin = (props) => {
           innerLink: "/admin/complaints",
           // imgSrc: require("../assets/img/brand/argon-react.png"),
           // imgSrc: require("../assets/img/brand/smartone.png"),
-          imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/SmarTone_logo.svg/2560px-SmarTone_logo.svg.png",
+          imgSrc: "https://static.wikia.nocookie.net/mobius-paradox/images/a/a8/Contoso_symbol.PNG/revision/latest?cb=20150621175031",
           imgAlt: "...",
         }}
       />
