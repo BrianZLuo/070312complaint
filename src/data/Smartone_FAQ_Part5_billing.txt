@@ -1,0 +1,33 @@
+Billing, Usage and Payment
+Q1 Why is the amount on my first bill different from my monthly tariff plan?
+A1 All tariff plans are calculated based on the calendar dates of the billing cycle. If your service is activated in the middle of a billing cycle, the monthly fee of your first bill will be prorated. Hence, you will see on your first bill the prorated charges from the activation date to your first bill date, in addition to a full month's advance payment.
+Q2 How do I calculate the airtime charge of a local call?
+A2 The calculation starts from the moment the recipient answers the call until it is disconnected. If the line is busy or if there is no answer, no airtime charge will incur. Call durations are rounded up to the next full charge units. Each charge unit is based on per minute of airtime charge.
+Q3 Can I check my call records?
+A3 You can view your call details for the past 12 months by clicking on My Account and selecting 'My Statements'. You may also request to receive a statement by post at the cost of HK$25 by calling our 24-hour hotline 2880 2688 or by visiting any SmarTone store. We will post the statement to you in about 7 working days.
+Q4 Why are the roaming calls that I made last month not yet charged on my statement of this month?
+A4 As roaming calls records are provided by roaming partners, roaming charges may take one to two months before it is reflected on your statement. China roaming may require up to three months.
+Q5 Can I change the language for my statement?
+A5 Yes, you can choose your desired language through our Internet site by clicking on My Account then selecting 'Change Profile' or by calling us at 2880 2688. The new bill language will be effective from your next billing cycle.
+Q6 How do I check the usage and statement balance of my account?
+A6 You may check it anytime by using one of the following methods:
+
+1. Via SmarTone's website – Log into My Account and select "Usage Details" and "Statement Balance".
+2. Via the SmarTone CARE app – Log into My Account and select "Usage" and "Bill".
+3. Via SMS – Press on your phone.
+   Q7 What are Intra-Call Minutes ?
+   A7 This is airtime that applies to incoming and outgoing calls with other SmarTone customers. Different plans have different free intra-call minutes entitlements. You can use these free minute to call our 24-hour hotline and retrieve your 'voice mail' messages or check messages via our built-in secretarial service.
+   Q8 How can I settle my bill?
+   A8 Payments can be made at our selected stores, via PPS or ATM. You may also send us a cheque, or settle the payment through Direct Debit. The online bill payments services provided by PPS, Jetco, HSBC and HSB also allow you to settle your SmarTone bills if you have registered with the relevant service.
+   Q9 How do I apply for autopay, and how long does it take?
+   A9
+   Credit Card Autopay - You can click here to complete the application for autopay service; or download and complete the application form and bring it along with you your credit card to one of our stores for arrangement. The autopay service will come into effect from the next bill date.
+
+Bank Account Autopay - You can download and complete the application form, then submit it to your bank in person, or visit one of our stores for arrangement. Please bring along your bank documents such as bank statement and ATM Card for verification. It takes about two to five weeks to process. You will be notified by your bank by post once your application is approved.
+
+Q10 Are there any special channels provided for the needy people (e.g. elderly, visually impaired) to check their statement?
+A10 Customers can check their account information by calling our 24-hour hotline at 2880 2688. After selecting language and input mobile number, press 0 to contact our customer service officer for assistance. Customers are also welcome to visit any of SmarTone stores, our store staff will be happy to help on all billing enquiries.
+Q11 How can I change my billing address and / or registered address?
+A11 If you want to change your billing address and/or registered address, please come to one of our stores with your HKID/passport or Business Registration Certificate, as well as proof of address received within the last three months.
+Q12 Are there any other service charges except monthly fee?
+A12 Check here for other service charges.

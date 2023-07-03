@@ -1,0 +1,9 @@
+A. About LogInNow
+Q1 Why should I use LogInNow?
+A1 With LogInNow, our access security control, you only need one username and password, making it simpler to access your SmarTone services online and My Account.
+Q2 Can I not set up LogInNow?
+A2 Once LogInNow is available to you, you are required to set it up in order to access My Account and SmarTone services that require login.
+Q3 How do I set up LogInNow ?
+A3 For customers who join SmarTone on or after 9 Sept 2013, use your username and password to log into My Account and any SmarTone service. For other customers, after receiving invitations, use your mobile number and password to log into My Account and any SmarTone service. You will be guided to setup LogInNow in simple steps.
+Q4 How do I make sure I receive the invitation to set up LogInNow?
+A4 Invitations will be sent via email in stages. Please ensure that you have given us your most frequently used email. If you haven't, please log into My Account and update your contact email in 'My Profile'. To prevent your email account provider mistakenly sending our emails to your spam folder, please add comms@service.smartone.com to your address book. If you are not sure how to add us to your address book, please click below to view instructions for the most commonly used email accounts:

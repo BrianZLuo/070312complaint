@@ -1,0 +1,153 @@
+
+
+A. About LogInNow
+Q1	Why should I use LogInNow?
+A1	With LogInNow, our access security control, you only need one username and password, making it simpler to access your SmarTone services online and My Account.
+Q2	Can I not set up LogInNow?
+A2	Once LogInNow is available to you, you are required to set it up in order to access My Account and SmarTone services that require login.
+Q3	How do I set up LogInNow ?
+A3	For customers who join SmarTone on or after 9 Sept 2013, use your username and password to log into My Account and any SmarTone service. For other customers, after receiving invitations, use your mobile number and password to log into My Account and any SmarTone service. You will be guided to setup LogInNow in simple steps.
+Q4	How do I make sure I receive the invitation to set up LogInNow?
+A4	Invitations will be sent via email in stages. Please ensure that you have given us your most frequently used email. If you haven't, please log into My Account and update your contact email in 'My Profile'. To prevent your email account provider mistakenly sending our emails to your spam folder, please add comms@service.smartone.com to your address book. If you are not sure how to add us to your address book, please click below to view instructions for the most commonly used email accounts:
+
+Google 
+Yahoo 
+Hotmail 
+
+
+B. About using LogInNow
+Q5	What is the difference between a password and a 6-digit PIN?
+A5	A password can be used for the following:
+Logging into My Account
+Logging into critical applications with sensitive personal information
+Subscribing to Apps & Services via ST apps
+
+6-digit PIN can be used for the following:
+Logging into our service hotline
+Logging into less critical applications
+Q6	What if I forget my username and/or password?
+A6	Click the ‘ Forgot username and/or password' link on any login page, follow the simple instructions to retrieve your username and/or reset your password.
+Q7	Can I retrieve my password without resetting it?
+A7	To ensure no one but you know your password, we store it in an encrypted format. Therefore, even we do not know what it is, so your password cannot be retrieved.
+Q8	What if I forget my 6-digit PIN?
+A8	If you forget your 6-digit PIN, please log in to My Account, go to LogInNow > Settings, then follow the simple instructions to set a new PIN.
+Q9	Why do I need to enter a CAPTCHA code for login?
+A9	You have consecutively entered a wrong username or password. For security reasons, you will need to enter a CAPTCHA code when you attempt to log in again.
+Q10	What if all my services requiring login are blocked because I forgot my password?
+A10	For security reasons, you can call our service hotline 2880 2688 or visit our stores to recover your login credentials.
+Q11	How can I change my username, password and 6-digit PIN?
+A11	Please log into My Account on our website and go into 'LogInNow' to make these changes.
+Q12	If there are multiple users in the same account and each user managing multiple lines, what are the benefits of LogInNow?
+A12	If account owners and users need to manage multiple lines of their own, they can group them under their respective username and password via LogInNow.
+
+Account owners can also authorise users to make line-related enquires and manage matters relating to the subscription of their numbers at stores and via the hotline, thus making it more convenient for both the account owners and line users. To enjoy this convenience, account owners only have to visit one of our stores once for identity verification and to make the arrangements.
+
+
+C. For accounts with multiple lines
+Q13	What are the rights of an authorised user and how to become an authorised user?
+A13	The authorised user is permitted to act on behalf of the owner on matters in relation to the subscription of the subscriber number, except in the following circumstances:
+
+Disconnection of service (except disconnection due to lost SIM);
+Transfer the service number to another person;
+Port out the mobile number;
+For authorised user under 18, purchase of products bundled with fixed term contract mobile / wireless fixed service subscription are not allowed.
+
+To become authorised users, account owners and authorised users only need to visit one of our stores once for ID verification to make the arrangement.
+Q14	What should an account owner do if he/she wants to further respect the privacy of the user(s) under their account by not viewing their usage details?
+A14	The account owner and the line user(s) can simply visit our stores to make the arrangements. To offer further convenience, the account owner and the relevant line user(s) can either visit any of our stores together or the line user(s) can come after the account owner has made the relevant arrangements.
+Q15	Can user authorisation be retracted once granted?
+A15	Yes. Account owners can retract authorisation at any of our stores or via hotline.
+
+Numbers Porting
+Q1	Do I need to request for a service suspension?
+A1	Once you ’ ve successfully subscribed to SmarTone ’ s mobile service, you don ’ t need to contact your current operator.
+Q2	Do I have to keep my current number active?
+A2	Always remember to keep your number active throughout the transfer process. You don ’ t need to - and should not - ask your current operator to terminate your number ’ s service.
+Q3	Can I port in a prepaid SIM or a number with monthly plan subscription to SmarTone?
+A3	Monthly plan subscribers: Ensure you ’ re the number ’ s registered holder and your contract with the current operator has ended or is almost over.
+Prepaid SIM users: Ensure your prepaid SIM is not expired with a balance of at least HK$1.
+Q4	How long does it take to transfer?
+A4	It generally takes SmarTone about 7 days to process the transfer of your mobile number, so you may subscribe to your new SmarTone service 7 days prior to the end date of your current contract to have your number transferred to SmarTone on the date your current contract expires.
+You may also register up to 150 days in advance for a SmarTone service subscription. Go through the registration, get your SIM, sit back and look forward to your service activation date.
+*If you want to request for a different transfer date, send us a WhatsApp message after getting your SIM card.
+Q5	Is my mobile number secured throughout the process?
+A5	Please make sure the number is active during port-in process. We take great care of every customer request and the handling of your mobile number is no exception.
+Q6	How do I pick the date to make the switch?
+A6	Make sure to pick your contract end date while choosing a date to carry over your mobile number. Picking a wrong date may result in unnecessary surcharges.
+Really have no idea when your contract is expiring? You ’ re advised to
+
+login to your current operator ’ s online account or mobile app to find out
+ask a staff from your current operator at a store or via the customer service hotline
+
+3HK hotline: 1033CMHK hotline: 2945 8888
+CMHK hotline: 2945 8888
+CSL hotline: 2512 3123
+HKBN hotline: 128 100
+Q7	What documents do I need?
+A7	You ’ ll just need an e-copy of Hong Kong ID card and address proof to subscribe to our service. Simply pick a monthly plan and subscribe.
+Q8	Can my mobile number be carried over to SmarTone if it ’ s not registered under my name?
+A8	If mobile number is registered under your family member ’ s name, please allow him/her to fill in relevant information to port in.
+Q9	Can a mobile number on a prepaid SIM be carried over to SmarTone?
+A9	Yes, provided that you are the holder of the prepaid SIM, and there must be at least HK$1 remaining on the prepaid SIM card account to keep the number active. You can simply input the serial number behind the prepaid SIM (ICCID). Then you can carry over your mobile number on the prepaid SIM via SmarTone website.
+Q10	If a mobile number is suspended, can I still carry over the number to SmarTone?
+A10	You ’ ll have to first ask the related telecom service provider to reactivate the suspended mobile number. You can then access the SmarTone website to subscribe to our service after the number is reactivated.
+
+Billing, Usage and Payment
+Q1	Why is the amount on my first bill different from my monthly tariff plan?
+A1	All tariff plans are calculated based on the calendar dates of the billing cycle. If your service is activated in the middle of a billing cycle, the monthly fee of your first bill will be prorated. Hence, you will see on your first bill the prorated charges from the activation date to your first bill date, in addition to a full month's advance payment.
+Q2	How do I calculate the airtime charge of a local call?
+A2	The calculation starts from the moment the recipient answers the call until it is disconnected. If the line is busy or if there is no answer, no airtime charge will incur. Call durations are rounded up to the next full charge units. Each charge unit is based on per minute of airtime charge.
+Q3	Can I check my call records?
+A3	You can view your call details for the past 12 months by clicking on My Account and selecting 'My Statements'. You may also request to receive a statement by post at the cost of HK$25 by calling our 24-hour hotline 2880 2688 or by visiting any SmarTone store. We will post the statement to you in about 7 working days.
+Q4	Why are the roaming calls that I made last month not yet charged on my statement of this month?
+A4	As roaming calls records are provided by roaming partners, roaming charges may take one to two months before it is reflected on your statement. China roaming may require up to three months.
+Q5	Can I change the language for my statement?
+A5	Yes, you can choose your desired language through our Internet site by clicking on My Account then selecting 'Change Profile' or by calling us at 2880 2688. The new bill language will be effective from your next billing cycle.
+Q6	How do I check the usage and statement balance of my account?
+A6	You may check it anytime by using one of the following methods:
+1.	Via SmarTone's website – Log into My Account and select "Usage Details" and "Statement Balance".
+2.	Via the SmarTone CARE app – Log into My Account and select "Usage" and "Bill".
+3.	Via SMS – Press  on your phone.
+Q7	What are Intra-Call Minutes ?
+A7	This is airtime that applies to incoming and outgoing calls with other SmarTone customers. Different plans have different free intra-call minutes entitlements. You can use these free minute to call our 24-hour hotline and retrieve your 'voice mail' messages or check messages via our built-in secretarial service.
+Q8	How can I settle my bill?
+A8	Payments can be made at our selected stores, via PPS or ATM. You may also send us a cheque, or settle the payment through Direct Debit. The online bill payments services provided by PPS, Jetco, HSBC and HSB also allow you to settle your SmarTone bills if you have registered with the relevant service.
+Q9	How do I apply for autopay, and how long does it take?
+A9	
+Credit Card Autopay - You can click here to complete the application for autopay service; or download and complete the application form and bring it along with you your credit card to one of our stores for arrangement. The autopay service will come into effect from the next bill date.
+
+Bank Account Autopay - You can download and complete the application form, then submit it to your bank in person, or visit one of our stores for arrangement. Please bring along your bank documents such as bank statement and ATM Card for verification. It takes about two to five weeks to process. You will be notified by your bank by post once your application is approved.
+
+Q10	Are there any special channels provided for the needy people (e.g. elderly, visually impaired) to check their statement?
+A10	Customers can check their account information by calling our 24-hour hotline at 2880 2688. After selecting language and input mobile number, press 0 to contact our customer service officer for assistance. Customers are also welcome to visit any of SmarTone stores, our store staff will be happy to help on all billing enquiries.
+Q11	How can I change my billing address and / or registered address?
+A11	If you want to change your billing address and/or registered address, please come to one of our stores with your HKID/passport or Business Registration Certificate, as well as proof of address received within the last three months.
+Q12	Are there any other service charges except monthly fee?
+A12	Check here for other service charges.
+
+Repair Service
+Q1	What should I do if my SmarTone phone is out of order?
+A1	For BlackBerry, Huawei and Emporia phones users plus Mobile Broadband, you may visit the Repair Collection Point on Kowloon side for repair service, and no inspection fee is levied if the phone is still within the valid warranty period. For other models, you may bring it, along with your proof-of-purchase invoice to the service centres of the respective manufacturers for repair.
+Address of Repair Collection Point:
+Shop 5&6, G/F, Pakpolee Commercial Centre, No.1A Sai Yeung Choi Street South (Opposite to Ginza Plaza)
+
+(Please click here for more information)
+Q2	Can I have a spare phone to use during the repair period?
+A2	We can arrange for a loaner phone, of whatever model - for you to use during the repair period, unless all loaner phones are out of stock.
+
+
+SmarT Home
+Q1	What is the SmarT Home service?
+A1	SmarT Home is a brand new service offered by SmarTone. It covers two types of solutions – SmarT Monitoring Home Solution and SmarT Comfy Home Solution, which enable you to control home settings, such as lighting, air-conditioning, curtains, home entertainment products and home monitoring devices and more, via your smartphone or tablet anytime, anywhere. Set to your preferences, you can also preset scenes and remotely set time switches to enjoy a comfortable home environment and save energy.
+Q2	Who are the target customers of the SmarT Home service?
+A2	We target any households who look for a comfy and monitored home environment and energy saving, whatever the size or style of the flat. Our SmarT Home service offers flexible options to cater for the needs of different families.
+Q3	Why do I need a smart home service?
+A3	Smart products have become increasingly popular and are more integrated into our everyday lives. Through wireless technology, home monitoring technology, audio/video technology and automatic control technology, home facilities are consolidated onto a single platform, thus creating an effective home control system. It is more secure, convenient and energy efficient- which is ideal for you to enjoy the comfort of your home.
+Q4	Why should I choose the Smart Home service?
+A4	There are numerous smart home devices and appliances in the market. Some need self installation while in other cases, replacement for a new device is required. What's more, they usually work on separate operating platforms. Our Smart Home service offers you great value, plus you can add on devices flexibly as required to boost your own smart life. Using reliable Z-Wave wireless technology, all products are retrofitted with no drilling and wiring needed, suitable for all kinds of homes with renovation works in progress or completed! We provide one-stop service with on-site consultation and installation, 24-hour customer support, 24-month device warranty and on-site maintenance. Your requirements will be fully taken care of from pre-sales to after-sales, plus you get great value for money and our caring service, so you can rest assured to enjoy a brilliant smart home.
+Q5	Will the installation work affect my home decorations? How long will it take?
+A5	No drilling and wiring are needed during installation, thus there will be no impact on your home's structure and decorations. The installation generally takes between 4 and 6 hours, depending on the project's complexity. Our technical staff will give you an estimated installation time following an on-site inspection.
+Q6	What are the advantages of Z-Wave wireless technology used by the SmarT Home service?
+A6	Z-Wave operates on a frequency band (919MHz) different from Wi-Fi and Zigbee. This can avoid interference from other wireless communication devices running at 2.4GHz, and can alleviate the traffic load on your router. In the whole smart home system, a network connection is required for the gateway only. The devices use Z-Wave technology to communicate with the gateway.
+Q7	How can I operate the SmarT Home system after installation?
+A7	With the SmarT Home app, you and your family can control the home appliances and devices instantly on the wireless control panel, preset their operation time, or even set up an automatic operation with the help of sensors. After the system installation, family members can choose between the original and the new control methods according to their personal preferences.

@@ -1,0 +1,26 @@
+B. About using LogInNow
+Q5 What is the difference between a password and a 6-digit PIN?
+A5 A password can be used for the following:
+Logging into My Account
+Logging into critical applications with sensitive personal information
+Subscribing to Apps & Services via ST apps
+
+6-digit PIN can be used for the following:
+Logging into our service hotline
+Logging into less critical applications
+Q6 What if I forget my username and/or password?
+A6 Click the ‘ Forgot username and/or password' link on any login page, follow the simple instructions to retrieve your username and/or reset your password.
+Q7 Can I retrieve my password without resetting it?
+A7 To ensure no one but you know your password, we store it in an encrypted format. Therefore, even we do not know what it is, so your password cannot be retrieved.
+Q8 What if I forget my 6-digit PIN?
+A8 If you forget your 6-digit PIN, please log in to My Account, go to LogInNow > Settings, then follow the simple instructions to set a new PIN.
+Q9 Why do I need to enter a CAPTCHA code for login?
+A9 You have consecutively entered a wrong username or password. For security reasons, you will need to enter a CAPTCHA code when you attempt to log in again.
+Q10 What if all my services requiring login are blocked because I forgot my password?
+A10 For security reasons, you can call our service hotline 2880 2688 or visit our stores to recover your login credentials.
+Q11 How can I change my username, password and 6-digit PIN?
+A11 Please log into My Account on our website and go into 'LogInNow' to make these changes.
+Q12 If there are multiple users in the same account and each user managing multiple lines, what are the benefits of LogInNow?
+A12 If account owners and users need to manage multiple lines of their own, they can group them under their respective username and password via LogInNow.
+
+Account owners can also authorise users to make line-related enquires and manage matters relating to the subscription of their numbers at stores and via the hotline, thus making it more convenient for both the account owners and line users. To enjoy this convenience, account owners only have to visit one of our stores once for identity verification and to make the arrangements.
