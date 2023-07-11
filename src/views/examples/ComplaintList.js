@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React, { useState, useRef} from 'react';
+import React, { useState, useRef, useEffect} from 'react';
 // antd components
 import { Button as AntdButton, Input as AntdInput, Avatar, List, Select, Divider, Modal, Steps, Collapse, theme } from 'antd'
 import { ExclamationCircleTwoTone, RightCircleTwoTone, CaretRightOutlined, CheckCircleTwoTone } from '@ant-design/icons';
@@ -46,11 +46,11 @@ const Complaint = () => {
 
   const childRef = useRef()
   
-    async function getDocuments(){
-      const container = client.database(databaseID).container(containerID)
-      const querySpec = {query:"SELECT * from c"}
-      const resources = await container.items.query(querySpec).fetchAll()
-      console.log(resources)
+  async function getDocuments(){
+    const container = client.database(databaseID).container(containerID)
+    const querySpec = {query:"SELECT * from c"}
+    const resources = await container.items.query(querySpec).fetchAll()
+    return(resources.resources)
   }
 
   // ** left menu filter
@@ -83,248 +83,250 @@ const Complaint = () => {
 
 
   // ** main complaint list - later retrieve from azure cosmodb restful
-  const dbbackup =[
-    {
-      href: 'https://ant.design',
-      title: `Jane Doe`,
-      Email:"jane.doe@example.com",
-      Phone:"+1(555)555-555",
-      AccountNumber:"0987654321",
-      AccountType:"Basic",
-      BillingAddress:"456 Oak St.",
-      City:"Anytown",
-      State:"NY",
-      ZipCode:"54321",
-      avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=1`,
-      description:
-        'The item I received was different from what was advertised.',
-      content:
-        'I ordered a dress online that was advertised as being made from a certain fabric and having a certain design, but when it arrived, the fabric was different and the design was not as pictured.',
-      status:[
-        {
-          title: 'New',
-          description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
-        },
+  // const dbbackup =[
+  //   {
+  //     href: 'https://ant.design',
+  //     title: `Jane Doe`,
+  //     Email:"jane.doe@example.com",
+  //     Phone:"+1(555)555-555",
+  //     AccountNumber:"0987654321",
+  //     AccountType:"Basic",
+  //     BillingAddress:"456 Oak St.",
+  //     City:"Anytown",
+  //     State:"NY",
+  //     ZipCode:"54321",
+  //     avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=1`,
+  //     description:
+  //       'The item I received was different from what was advertised.',
+  //     content:
+  //       'I ordered a dress online that was advertised as being made from a certain fabric and having a certain design, but when it arrived, the fabric was different and the design was not as pictured.',
+  //     status:[
+  //       {
+  //         title: 'New',
+  //         description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
+  //       },
 
-        {
-          title: 'In progress',
-          description: '',
-        },
-        {
-          title: 'Resolved',
-          description: '',
-        }
-      ],
-      startDate:"2023-01-02",
-      updateDate:"2023-06-23",
-      statusCode:"1",
-      priority:"1"
-    }
-    ,
-    {
-      href: 'https://ant.design',
-      title: `Sarah Lee`,
-      Email:"sarah.lee@example.com",
-      Phone:"+1(555)234-5678",
-      AccountNumber:"2468013579",
-      AccountType:"Basic",
-      BillingAddress:"321 Pine St.",
-      City:"Anytown",
-      State:"NY",
-      ZipCode:"76543",
-      avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=2`,
-      description:
-        'I ordered a product online and it arrived damaged.',
-      content:
-        'I recently ordered a brand new laptop online, but when it arrived, the box was visibly damaged. Upon opening it, I found that the laptop screen was cracked and the keyboard was not functioning properly.',
-      status:[
-        {
-          title: 'New',
-          description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
-        },
+  //       {
+  //         title: 'In progress',
+  //         description: '',
+  //       },
+  //       {
+  //         title: 'Resolved',
+  //         description: '',
+  //       }
+  //     ],
+  //     startDate:"2023-01-02",
+  //     updateDate:"2023-06-23",
+  //     statusCode:"1",
+  //     priority:"1"
+  //   }
+  //   ,
+  //   {
+  //     href: 'https://ant.design',
+  //     title: `Sarah Lee`,
+  //     Email:"sarah.lee@example.com",
+  //     Phone:"+1(555)234-5678",
+  //     AccountNumber:"2468013579",
+  //     AccountType:"Basic",
+  //     BillingAddress:"321 Pine St.",
+  //     City:"Anytown",
+  //     State:"NY",
+  //     ZipCode:"76543",
+  //     avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=2`,
+  //     description:
+  //       'I ordered a product online and it arrived damaged.',
+  //     content:
+  //       'I recently ordered a brand new laptop online, but when it arrived, the box was visibly damaged. Upon opening it, I found that the laptop screen was cracked and the keyboard was not functioning properly.',
+  //     status:[
+  //       {
+  //         title: 'New',
+  //         description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
+  //       },
 
-        {
-          title: 'In progress',
-          description: "Action is being taken to resolve the complaint. This status indicates that the staff member has indentified a course of action to resolve the complaint and is working to implement it.",
-        },
-        {
-          title: 'Resolved',
-          description: '',
-        }
-      ],
-      startDate:"2023-04-02",
-      updateDate:"2023-06-24",
-      statusCode:"2",
-      priority:"2"
-    },
-    {
-      href: 'https://ant.design',
-      title: `Liam`,
-      avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=3`,
-      description:
-        'I was charged twice for the same purchase.',
-      content:
-        'I made a purchase at a retail store using my credit card, but when I checked my bank statement, I realized that I had been charged twice for the same amount.',
-      startDate:"2023-01-02",
-      updateDate:"2023-07-02",
-      statusCode:"3",
-      status:[
-        {
-          title: 'New',
-          description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
-        },
+  //       {
+  //         title: 'In progress',
+  //         description: "Action is being taken to resolve the complaint. This status indicates that the staff member has indentified a course of action to resolve the complaint and is working to implement it.",
+  //       },
+  //       {
+  //         title: 'Resolved',
+  //         description: '',
+  //       }
+  //     ],
+  //     startDate:"2023-04-02",
+  //     updateDate:"2023-06-24",
+  //     statusCode:"2",
+  //     priority:"2"
+  //   },
+  //   {
+  //     href: 'https://ant.design',
+  //     title: `Liam`,
+  //     avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=3`,
+  //     description:
+  //       'I was charged twice for the same purchase.',
+  //     content:
+  //       'I made a purchase at a retail store using my credit card, but when I checked my bank statement, I realized that I had been charged twice for the same amount.',
+  //     startDate:"2023-01-02",
+  //     updateDate:"2023-07-02",
+  //     statusCode:"3",
+  //     status:[
+  //       {
+  //         title: 'New',
+  //         description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
+  //       },
 
-        {
-          title: 'In progress',
-          description: "Action is being taken to resolve the complaint. This status indicates that the staff member has indentified a course of action to resolve the complaint and is working to implement it.",
-        },
-        {
-          title: 'Resolved',
-          description: 'The complaint has been resolved to statisfaction of the complaintant. This status indicatest that the complaint has been fully investigated and resolved, and the complaintant is satisfied with the outcome.',
-        }],
-        priority:"3"
-    },
-    {
-      href: 'https://ant.design',
-      title: `Sophia`,
-      avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=4`,
-      description:
-        'The customer service representative was rude and unhelpful.',
-      content:
-        'I called a customer service line to inquire about a product, but the representative I spoke to was dismissive and uninterested in helping me',
-      status:[
-        {
-          title: 'New',
-          description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
-        },
+  //       {
+  //         title: 'In progress',
+  //         description: "Action is being taken to resolve the complaint. This status indicates that the staff member has indentified a course of action to resolve the complaint and is working to implement it.",
+  //       },
+  //       {
+  //         title: 'Resolved',
+  //         description: 'The complaint has been resolved to statisfaction of the complaintant. This status indicatest that the complaint has been fully investigated and resolved, and the complaintant is satisfied with the outcome.',
+  //       }],
+  //       priority:"3"
+  //   },
+  //   {
+  //     href: 'https://ant.design',
+  //     title: `Sophia`,
+  //     avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=4`,
+  //     description:
+  //       'The customer service representative was rude and unhelpful.',
+  //     content:
+  //       'I called a customer service line to inquire about a product, but the representative I spoke to was dismissive and uninterested in helping me',
+  //     status:[
+  //       {
+  //         title: 'New',
+  //         description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
+  //       },
 
-        {
-          title: 'In progress',
-          description: '',
-        },
-        {
-          title: 'Resolved',
-          description: '',
-        }
-      ],
-      startDate:"2023-01-02",
-      updateDate:"2023-06-23",
-      statusCode:"1",
-      priority:"3"
-    },
-    {
-      href: 'https://ant.design',
-      title: `Jackson`,
-      avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=5`,
-      description:
-        'The product I received was expired.',
-      content:
-        'I called a customer service line to inquire about a product, but the representative I spoke to was dismissive and uninterested in helping me',
-      status:[
-        {
-          title: 'New',
-          description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
-        },
+  //       {
+  //         title: 'In progress',
+  //         description: '',
+  //       },
+  //       {
+  //         title: 'Resolved',
+  //         description: '',
+  //       }
+  //     ],
+  //     startDate:"2023-01-02",
+  //     updateDate:"2023-06-23",
+  //     statusCode:"1",
+  //     priority:"3"
+  //   },
+  //   {
+  //     href: 'https://ant.design',
+  //     title: `Jackson`,
+  //     avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=5`,
+  //     description:
+  //       'The product I received was expired.',
+  //     content:
+  //       'I called a customer service line to inquire about a product, but the representative I spoke to was dismissive and uninterested in helping me',
+  //     status:[
+  //       {
+  //         title: 'New',
+  //         description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
+  //       },
 
-        {
-          title: 'In progress',
-          description: '',
-        },
-        {
-          title: 'Resolved',
-          description: '',
-        }
-      ],
-      startDate:"2023-01-02",
-      updateDate:"2023-06-23",
-      statusCode:"1",
-      priority:"3"
-    },
-    {
-      href: 'https://ant.design',
-      title: `Jackson`,
-      avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=6`,
-      description:
-        'I never received my order even though it was marked as delivered.',
-      content:
-        'I ordered a package that was marked as delivered, but it never arrived at my doorstep, and the delivery company was unable to provide any information about its whereabouts',
-      status:[
-        {
-          title: 'New',
-          description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
-        },
+  //       {
+  //         title: 'In progress',
+  //         description: '',
+  //       },
+  //       {
+  //         title: 'Resolved',
+  //         description: '',
+  //       }
+  //     ],
+  //     startDate:"2023-01-02",
+  //     updateDate:"2023-06-23",
+  //     statusCode:"1",
+  //     priority:"3"
+  //   },
+  //   {
+  //     href: 'https://ant.design',
+  //     title: `Jackson`,
+  //     avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=6`,
+  //     description:
+  //       'I never received my order even though it was marked as delivered.',
+  //     content:
+  //       'I ordered a package that was marked as delivered, but it never arrived at my doorstep, and the delivery company was unable to provide any information about its whereabouts',
+  //     status:[
+  //       {
+  //         title: 'New',
+  //         description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
+  //       },
 
-        {
-          title: 'In progress',
-          description: '',
-        },
-        {
-          title: 'Resolved',
-          description: '',
-        }
-      ],
-      startDate:"2023-01-02",
-      updateDate:"2023-06-23",
-      statusCode:"1",
-      priority:"3"
-    },
-    {
-      href: 'https://ant.design',
-      title: `Isebella`,
-      avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=7`,
-      description:
-        'The item was supposed to be delivered in 2 days, but it took 2 weeks.',
-      content:
-        'I ordered a product with express shipping, but it took much longer than the promised delivery date, causing me to miss an important event.',
-      status:[
-        {
-          title: 'New',
-          description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
-        },
+  //       {
+  //         title: 'In progress',
+  //         description: '',
+  //       },
+  //       {
+  //         title: 'Resolved',
+  //         description: '',
+  //       }
+  //     ],
+  //     startDate:"2023-01-02",
+  //     updateDate:"2023-06-23",
+  //     statusCode:"1",
+  //     priority:"3"
+  //   },
+  //   {
+  //     href: 'https://ant.design',
+  //     title: `Isebella`,
+  //     avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=7`,
+  //     description:
+  //       'The item was supposed to be delivered in 2 days, but it took 2 weeks.',
+  //     content:
+  //       'I ordered a product with express shipping, but it took much longer than the promised delivery date, causing me to miss an important event.',
+  //     status:[
+  //       {
+  //         title: 'New',
+  //         description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
+  //       },
 
-        {
-          title: 'In progress',
-          description: '',
-        },
-        {
-          title: 'Resolved',
-          description: '',
-        }
-      ],
-      startDate:"2023-01-02",
-      updateDate:"2023-06-23",
-      statusCode:"1",
-      priority:"3"
-    },
-    {
-      href: 'https://ant.design',
-      title: `Aiden`,
-      avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=8`,
-      description:
-        'The website crashed while I was trying to make a purchase.',
-      content:
-        'I was trying to buy concert tickets online, but the website crashed multiple times during the checkout process, causing me to miss out on the tickets.',
-      status:[
-        {
-          title: 'New',
-          description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
-        },
+  //       {
+  //         title: 'In progress',
+  //         description: '',
+  //       },
+  //       {
+  //         title: 'Resolved',
+  //         description: '',
+  //       }
+  //     ],
+  //     startDate:"2023-01-02",
+  //     updateDate:"2023-06-23",
+  //     statusCode:"1",
+  //     priority:"3"
+  //   },
+  //   {
+  //     href: 'https://ant.design',
+  //     title: `Aiden`,
+  //     avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=8`,
+  //     description:
+  //       'The website crashed while I was trying to make a purchase.',
+  //     content:
+  //       'I was trying to buy concert tickets online, but the website crashed multiple times during the checkout process, causing me to miss out on the tickets.',
+  //     status:[
+  //       {
+  //         title: 'New',
+  //         description: 'The complaint has been received and is awaiting review. This status indicates that the complaint has been logged in the system, but action has been taken yet. The complaints is waiting to be assigned to a staff member for investigation',
+  //       },
 
-        {
-          title: 'In progress',
-          description: '',
-        },
-        {
-          title: 'Resolved',
-          description: '',
-        }
-      ],
-      startDate:"2023-01-02",
-      updateDate:"2023-06-23",
-      statusCode:"1",
-      priority:"3"
-    }
-  ]
+  //       {
+  //         title: 'In progress',
+  //         description: '',
+  //       },
+  //       {
+  //         title: 'Resolved',
+  //         description: '',
+  //       }
+  //     ],
+  //     startDate:"2023-01-02",
+  //     updateDate:"2023-06-23",
+  //     statusCode:"1",
+  //     priority:"3"
+  //   }
+  // ]
+  const [dbbackup, setdbbackup] = useState([])
+
   const [gptcomplaintsample, updateComplaintArray] = useState(dbbackup);
   const selectitem = (item) =>{
     setItemLatest(item)  // update select value
@@ -453,7 +455,6 @@ const Complaint = () => {
   const [isGenAIModalOpen, setIsGenAIModalOpen] = useState(false);
   const showGenAIModal = () => {
     setIsGenAIModalOpen(true);
-    getDocuments();
   };
   const handleGenAIOk = () => {
     setIsGenAIModalOpen(false);
@@ -463,7 +464,13 @@ const Complaint = () => {
   };
   // modal 2. selected complaint GenAI **
 
-
+  useEffect(()=>{
+    let temp = getDocuments()
+    setdbbackup(temp)
+    updateComplaintArray(temp)
+    console.log("dbbackup",dbbackup)
+    console.log("gptcomplaintsample",gptcomplaintsample)
+  },[]) //eslint-disable-line
 
   return (
     <>
