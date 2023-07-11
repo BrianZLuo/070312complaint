@@ -46,12 +46,6 @@ const Complaint = () => {
 
   const childRef = useRef()
   
-  async function getDocuments(){
-    const container = client.database(databaseID).container(containerID)
-    const querySpec = {query:"SELECT * from c"}
-    const resources = await container.items.query(querySpec).fetchAll()
-    return(resources)
-  }
 
   // ** left menu filter
   const [rules, updaterules] = useState({
@@ -464,13 +458,23 @@ const Complaint = () => {
   };
   // modal 2. selected complaint GenAI **
 
-  useEffect(()=>{
-    let temp = getDocuments()
-    setdbbackup([])
-    updateComplaintArray([])
-    console.log("temp",temp)
+
+  async function getDocuments(){
+    const container = client.database(databaseID).container(containerID)
+    const querySpec = {query:"SELECT * from c"}
+    const resources = await container.items.query(querySpec).fetchAll()
+
+    console.log("resources",resources)
     console.log("dbbackup",dbbackup)
     console.log("gptcomplaintsample",gptcomplaintsample)
+
+    setdbbackup(resources.resources)
+    updateComplaintArray(resources.resources)
+    return(resources)
+  }
+
+  useEffect(()=>{
+    getDocuments()
   },[]) //eslint-disable-line
 
   return (
