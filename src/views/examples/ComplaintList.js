@@ -34,8 +34,8 @@ import { CosmosClient } from '@azure/cosmos';
 const endpoint = "https://complaintsemaildb.documents.azure.com:443/"
 const key = "uuMJVtfYtNDyaNV7c8CnWCtEc1Q6ikFX8rxR4nrzxalkjOrztrX4VblV3Zkbt0gfuDeWH9UITFs4ACDbN8FHdA=="
 const client = new CosmosClient({ endpoint,key })
-const databaseID = "complaintsemaildb"
-const containerID= "SampleDB"
+const databaseID = "SampleDB"
+const containerID= "SampleContainer"
 // cosmos db **
 
 // antd const
