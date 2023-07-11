@@ -46,11 +46,11 @@ const Complaint = () => {
 
   const childRef = useRef()
   
-   function getDocuments(){
-    const container = client.database(databaseID).container(containerID)
-    const querySpec = {query:"SELECT * from c"}
-    const {resources}= container.items.query(querySpec).fetchAll()
-    console.log(resources)
+    async function getDocuments(){
+      const container = client.database(databaseID).container(containerID)
+      const querySpec = {query:"SELECT * from c"}
+      const resources = await container.items.query(querySpec).fetchAll()
+      console.log(resources)
   }
 
   // ** left menu filter
