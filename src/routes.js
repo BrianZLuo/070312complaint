@@ -24,6 +24,7 @@
 // import Icons from "views/examples/Icons.js";
 import Complaints from "views/examples/Complaint.js";
 // import Complaints from "views/examples/Profile.js";
+import ComplaintsList from "views/examples/ComplaintList.js";
 
 var routes = [
   {
@@ -32,6 +33,13 @@ var routes = [
     icon: "ni ni-single-02 text-yellow",
     component: <Complaints />,
     layout: "/admin",
+  },
+  {
+    path: "/",
+    name: "Compaints List",
+    icon: "ni ni-tv-2 text-primary",
+    component: <ComplaintsList />,
+    layout: "/complaints",
   },
   // {
   //   path: "/index",

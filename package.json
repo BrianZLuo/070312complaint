@@ -43,6 +43,7 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "@azure/cosmos": "^3.17.3",
     "@fortawesome/fontawesome-free": "6.4.0",
     "antd": "^5.6.2",
     "bootstrap": "4.6.2",
