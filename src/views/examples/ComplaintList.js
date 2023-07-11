@@ -50,7 +50,7 @@ const Complaint = () => {
     const container = client.database(databaseID).container(containerID)
     const querySpec = {query:"SELECT * from c"}
     const resources = await container.items.query(querySpec).fetchAll()
-    return(resources.resources)
+    return(resources)
   }
 
   // ** left menu filter
@@ -466,8 +466,9 @@ const Complaint = () => {
 
   useEffect(()=>{
     let temp = getDocuments()
-    setdbbackup(temp)
-    updateComplaintArray(temp)
+    setdbbackup([])
+    updateComplaintArray([])
+    console.log("temp",temp)
     console.log("dbbackup",dbbackup)
     console.log("gptcomplaintsample",gptcomplaintsample)
   },[]) //eslint-disable-line
