@@ -72,30 +72,40 @@ const Complaint = () => {
     });
     // Send the data to the Flask API
     try{
-      const response = await fetch('https://pwc-smt-complaint-flask.azurewebsites.net/api/v1/analyze_complaint', {
+      // const response = await fetch('https://pwc-smt-complaint-flask.azurewebsites.net/api/v1/analyze_complaint', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json'
+      //   },
+      //   body: JSON.stringify(formData)
+      // })
+
+      const response = await fetch('https://dedicatedinsuranceai.azurewebsites.net/api/DocumentSegmentating_v2', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          "question": "If I joined within the last year as an Financial Consultant (FC), what does my personal persistency rate need to be? "
+        })
       })
 
       const data = await response.json();
-      setFormData({
-        ...formData,
-        customerinfo: data.customerinfo,
-        category: data.category,
-        summary: data.summary,
-        suggested_response: data.suggested_response
-      });
+      // setFormData({
+      //   ...formData,
+      //   customerinfo: data.customerinfo,
+      //   category: data.category,
+      //   summary: data.summary,
+      //   suggested_response: data.suggested_response
+      // });
   
-      console.log(formData);
+      // console.log(formData);
   
-      setLoadings((prevLoadings) => {
-        const newLoadings = [...prevLoadings];
-        newLoadings[index] = false;
-        return newLoadings;
-      });
+      // setLoadings((prevLoadings) => {
+      //   const newLoadings = [...prevLoadings];
+      //   newLoadings[index] = false;
+      //   return newLoadings;
+      // });
 
     }catch(error){ 
       console.error(error)
