@@ -91,6 +91,7 @@ const Complaint = () => {
       })
 
       const data = await response.json();
+      console.log("data",data)
       // setFormData({
       //   ...formData,
       //   customerinfo: data.customerinfo,
